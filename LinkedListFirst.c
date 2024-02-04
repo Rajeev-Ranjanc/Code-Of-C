@@ -1,6 +1,7 @@
 /*Always Push this folder code in LinkedList branch*/
-
-
+/*
+this program is of linked list in which we create a linked list and 
+*/
 
 // Learning LinkedList
 // implementation of linked list
@@ -61,7 +62,7 @@ int main()
     printf("\nInsertion at begining in the linked list");
     struct node *newbegin;
     newbegin = (struct node *)malloc(sizeof(struct node));
-    int ele;
+
     printf("\nenter data which you want to insert at begining:");
     scanf("%d", &newbegin->data);
     newbegin->next = head;
@@ -76,6 +77,41 @@ int main()
         printf("%d  ", temp->data);
         temp = temp->next;
     }
+
+    //Insertion of node at the end of the linked list
+
+    struct node* newnodeatlast;
+
+    newnodeatlast = (struct node *)malloc(sizeof(struct node));
+    printf("\nenter data which you want to insert at last in the linked list:");
+    scanf("%d",&newnodeatlast ->data);
+    newnodeatlast->next = 0;
+
+    // linking the last node to the end of the linked list
+        temp = head;
+        while (temp->next!=0)
+        {
+            temp = temp->next;
+        }
+        temp ->next = newnodeatlast;
+    
+
+    // diplaying all the nodes of the
+    temp = head;
+    printf("\nlinked-list elements are:");
+    while (temp != 0)
+    {
+        printf("  %d", temp->data);
+        temp = temp->next;
+    }
+
+
+    /*Insert a node after a node in the linked list in a singly next*/
+
+
+
+    /*delete a node from begining in a singly linked list*/
+
 
     return 0;
 }
