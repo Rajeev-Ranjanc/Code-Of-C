@@ -23,6 +23,8 @@ int main()
     struct node *first = (struct node *)malloc(sizeof(struct node));
     struct node *second = (struct node *)malloc(sizeof(struct node));
     struct node *third = (struct node *)malloc(sizeof(struct node));
+
+    // this node is to be inserted at the begining of the linked list
     struct node *fourth = (struct node *)malloc(sizeof(struct node));
     // struct node *temp = (struct node *)malloc(sizeof(struct node));
 
